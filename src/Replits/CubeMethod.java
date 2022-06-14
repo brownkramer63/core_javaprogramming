@@ -1,16 +1,28 @@
 package Replits;
 
-public class CubeMethod {
-   public static int cube (int n){
+import java.util.Scanner;
 
-     int result = n*n*n;
-        return result;
+public class CubeMethod {
+    public static void cube(){
+
+        int n = new Scanner(System.in).nextInt();
+
+        //TYPE YOUR CODE BELOW:
+
+
+
+        int result = n*n*n;
+        System.out.println(result);
     }
+
+
+
+
+
+
     public static void main(String[] args) {
 
-cube(4);
-
-
+        cube();
 
     }
 }

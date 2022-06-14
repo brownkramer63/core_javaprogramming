@@ -1,4 +1,4 @@
-package Lad07ClassandObject;
+package Lab07ClassandObject;
 
 public class TestCydeoStudent {
     public static void main(String[] args) {
