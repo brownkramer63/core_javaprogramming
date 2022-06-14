@@ -21,6 +21,8 @@ public class Main {
 
         ArrayList<User> userlist = prepareUserLists(input);
 
+        ArrayList<Expense> expenseList = new ArrayList<>();
+
         System.out.println("Added user count: "+ userlist.size());
 
         System.out.println("Please see options below and select options using number");
@@ -32,12 +34,13 @@ public class Main {
             System.out.println(optionlist[i]+ ":"+ (i+1));
         }
 
-        for (int i = 0; i <-1 ; i++) {
+
+        for (int i = 0; i <1000 ; i++) {
 
 
-            System.out.println("Please enter number:");
+            System.out.println("Please enter number to access menu options:");
 
-            int answer1 = input.nextInt();
+           int answer1 = input.nextInt();
 
             switch (answer1 - 1) {
 
@@ -52,13 +55,14 @@ public class Main {
                     System.out.println("Expense amount: ");
                     expense.amount= input.nextInt();
 
+
                     System.out.println("Which user made this expense? Just type user id");
 
                     //show all users: id : 0 name: ozzy
 
                     for (User user: userlist
                          ) {
-                        System.out.println("id: "+userlist.indexOf(user)+ "name: "+ user.name);
+                        System.out.println(" id: "+userlist.indexOf(user)+ " name: "+ user.name);
                     }
 
                     // userlist: kramer and exc....
@@ -70,7 +74,6 @@ public class Main {
 
                     expense.user = user.name;
 
-                    ArrayList<Expense> expenseList = new ArrayList<>();
 
                     expenseList.add(expense);
 
@@ -79,10 +82,88 @@ public class Main {
 
                     break;
                 case 1:
+                    System.out.println("Please enter user name that you would like to search: ");
+
+                    String username = input.next();
+
+                    User myUser = null;
+
+                    for (User chosenuser: userlist
+                         ) {
+                        if (chosenuser.name.equals(username)){
+                            myUser = chosenuser;
+                            break;
+                        }
+
+                    }
+                    if (myUser==null){
+                        System.out.println("User does not exist!");
+                        break;
+                    }
+// now we need to list specific person expense
+                   int UserxpenseAmount=0;
+                    int expensecount =0;
+                    for (int k = 0; k <expenseList.size() ; k++) {
+
+                       if (expenseList.get(k).user.equals(username)){
+                           expensecount++;
+                           UserxpenseAmount +=expenseList.get(k).amount;
+                           System.out.println(expensecount + " -expense amount: "+ expenseList.get(k).amount+ " expense by: "
+                           + expenseList.get(k).user);
+                       }
+
+
+
+
+
+                    }
+                    System.out.println(myUser.name + " spent $"+ UserxpenseAmount);
+
+
+
+
+
+
+
+
+//                  my attempt at this
+//                   String username = input.next();
+//
+//                   if(userlist.contains(username)){
+//
+//                      int usercase1 = expenseList.indexOf(username);
+//
+//                       System.out.println("User: "+ expenseList.get(usercase1).user+ " Expense amount: "+
+//                               expenseList.get(usercase1).amount+ " Expense name: "+expenseList.get(usercase1).expenseName);
+//
+//
+//                   }else {
+//                       System.out.println("Invalid entry please reenter valid name");
+//                   }
+
+
+
+
+
+
+
                     break;
+
                 case 2:
+                    for (int j = 0; j <expenseList.size() ; j++) {
+
+                        System.out.println((j+1) + " expense amount: "+expenseList.get(j).amount + ", expense by: "+
+                                expenseList.get(j).user);
+                    }
+
+
+
                     break;
+                //example what we want in case 1
+                //0 - expense amount : 100 , expense by: ozzy
+                //1 - expense amount : 1000 , expense by: kramer
                 case 3:
+
                     break;
                 case 4:
                     break;
