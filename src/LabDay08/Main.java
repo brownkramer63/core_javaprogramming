@@ -164,8 +164,42 @@ public class Main {
                 //1 - expense amount : 1000 , expense by: kramer
                 case 3:
 
+                    double totalamount = 0;
+
+                    ArrayList<Split> splitList = calculateSplitByUser(expenseList);
+
+                    for (Split split: splitList
+                         ) {
+                        totalamount+=split.amount;
+                    }
+
+                    makeSplit(totalamount,splitList);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     break;
                 case 4:
+
+                    //need to do this on our own last menu option to do
+                    for (User user1:userlist
+                         ) {
+                        System.out.println(user1.name +" "+ user1.email );
+                    }
+
+
+
                     break;
                 case 5:
                     System.exit(0);
@@ -182,13 +216,66 @@ public class Main {
 
         }
 
+    public static void makeSplit(double totalamount, ArrayList<Split> splitList) {
+
+        double amount = totalamount/splitList.size();
+        //now we have total and amount each person owes
+
+        for (Split split: splitList
+             ) {
+            if (split.amount> amount){
+                System.out.println(split.userName+ " needs to take back "+ (split.amount-amount));
+            }else {
+                System.out.println(split.userName+ " needs to pay "+(amount- split.amount));
+            }
+
+        }
 
 
 
 
 
 
+    }
 
+    public static ArrayList<Split> calculateSplitByUser(ArrayList<Expense> expenseList) {
+
+        ArrayList<Split> splitList = new ArrayList<>();
+
+        for (Expense expense: expenseList
+             ) {
+            // 2 questions we need names and totals
+            Split split = existSplitList(expense.user,splitList);
+
+            if (split!=null){
+                split.amount+=expense.amount;
+            }else {
+                Split willbeadded=  new Split();
+                willbeadded.userName= expense.user;
+                willbeadded.amount= expense.amount;
+                splitList.add(willbeadded);
+            }
+
+
+
+
+
+
+        }
+
+        return splitList;
+    }
+
+    public static Split existSplitList(String user, ArrayList<Split> splitList) {
+
+        for (Split split: splitList
+             ) {
+            if (split.userName.equals(user))
+                return split;
+        }
+
+        return null;
+    }
 
 
     public static ArrayList<User> prepareUserLists(Scanner input) {
