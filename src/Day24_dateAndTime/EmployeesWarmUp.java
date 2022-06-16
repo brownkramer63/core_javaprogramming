@@ -54,9 +54,22 @@ public class EmployeesWarmUp {
         }
         System.out.println(min);
 
+        System.out.println("---------------------------------------");
 
+        ArrayList<Employee> femaleEmployees = new ArrayList<>();
+        ArrayList<Employee> maleEmployees = new ArrayList<>();
 
+        for (Employee empployeegender:employees
+             ) {
+            if (empployeegender.gender=='M'){
+                maleEmployees.add(empployeegender);
+            }else {
+                femaleEmployees.add(empployeegender);
+            }
+        }
 
+        System.out.println(femaleEmployees.size());
+        System.out.println(maleEmployees.size());
     }
 
 
