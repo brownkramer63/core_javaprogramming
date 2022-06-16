@@ -5,32 +5,26 @@ import java.util.Scanner;
 public class JadenCasingStrings {
     public static void main(String[] args) {
 
+        Scanner input = new Scanner(System.in);
 
-// need to use an array it looks like
-    Scanner input = new Scanner(System.in);
-
-    String sentence = input.nextLine();
-
-char[] charArray = sentence.toCharArray();
-boolean foundspace = true;
-        for (int i = 0; i <charArray.length ; i++) {
-
-           if (charArray[i-1]== ' '){
+        String quote = input.nextLine();
 
 
-           }
+        System.out.println(toJaden(quote));
 
+    }
+public static String toJaden(String quote){
+      if (quote ==null || quote.isEmpty()){
+          return "";
+      }
+      String ressult = "";
 
-
-
-
-
-        }
-
-
-
+      String [] strings =quote.split(" ");
+    for (String typhus:strings
+         ) {
+        ressult +=(typhus.charAt(0)+"").toUpperCase() +typhus.substring(1)+" ";
+    }
+return ressult.trim();
 }
-
-
 
 }

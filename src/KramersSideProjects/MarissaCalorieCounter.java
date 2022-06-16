@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class MarissaCaloryCounter {
+public class MarissaCalorieCounter {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

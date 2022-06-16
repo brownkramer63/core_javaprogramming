@@ -1,5 +1,6 @@
 package Groupwork;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class CountTheNumberOfDuplicates {
@@ -7,9 +8,12 @@ public class CountTheNumberOfDuplicates {
         Scanner input = new Scanner(System.in);
 
         String example = input.nextLine();
+
+        String examples = example.toLowerCase();
+
         int count = 0;
 
-        char array[] = example.toCharArray();
+        char array[] = examples.toCharArray();
 
         for (int i = 0; i < array.length ; i++) {
             count = 1;
