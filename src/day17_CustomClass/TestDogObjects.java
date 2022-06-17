@@ -25,7 +25,7 @@ public class TestDogObjects {
         dog2.color="brown";
 
         Dog dog3 = new Dog();
-        dog3.setInfo("krakra","lab","big",'m',4,"brown");
+        dog3.setInfo("krakra","lab",'m','m',"4","brown");
 
         System.out.println(dog1);
         System.out.println(dog2);

@@ -22,10 +22,24 @@ public class TaskPersonObjects {
 
         System.out.println("-----------------------");
 
+
+
         // remove age greater than 31
+ArrayList<Person> under31 = new ArrayList<>();
+        for (Person peeps: peoplelist
+             ) {
+            if (peeps.age<31){
+                under31.add(peeps);
+            }
+        }
+        System.out.println(under31);
 
+        System.out.println("--------------------------------");
 
-
+        for (Person nameAndAge: peoplelist
+             ) {
+            System.out.println(nameAndAge.name+" "+nameAndAge.age);
+        }
 
 
 
