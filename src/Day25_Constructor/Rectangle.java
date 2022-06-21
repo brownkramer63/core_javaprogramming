@@ -11,6 +11,11 @@ public class Rectangle {
 
         return length*width;
     }
+//    public void setInfo(double length, double width){
+//
+//       this.length=length;
+//               this.width=width;
+//    }
     //we just right clicked and generated below method
     public String toString() {
         return "Rectangle{" +
@@ -19,7 +24,10 @@ public class Rectangle {
                 '}';
     }
 
-
+    public Rectangle(double length, double width){ // this is our constructor
+        this.length=length;
+        this.width=width;
+    }
 
 
 }
