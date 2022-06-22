@@ -28,10 +28,10 @@ public class CountLetters {
                     result = result+letter;
                 }// idk about this code but we trying
 
-
+                result= numberofletters+result; // this doesnt work darn
             }
 
-        result= numberofletters+result;
+
 
         }
 

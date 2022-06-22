@@ -27,4 +27,21 @@ public class PalindromeString {
         }
 
     }
+    public static boolean isPalindrome(String word) {
+
+        String reverse = "";
+
+        word = (word.toLowerCase().replace(" ", ""));
+
+        for (int i = word.length() - 1; i >= 0; i--) { //reverse word
+            reverse += word.charAt(i);
+
+        }
+
+        if (!(word.equals(reverse))) { // outside the fori loop
+            return false;
+        }
+        return true;
+
+    }
 }
