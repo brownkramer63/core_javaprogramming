@@ -13,6 +13,7 @@ public class CountLetters {
         int numberofletters =0;
          char letter = ' ';
          String result ="";
+         String answer="";
 
         for(int i =0; i<str.length(); i++){
 
@@ -26,9 +27,11 @@ public class CountLetters {
                 }
                 if (letter==str.charAt(j) && (! result.contains(letter+""))){
                     result = result+letter;
-                }// idk about this code but we trying
+                }else {
+                    continue;
+                }
 
-                result= numberofletters+result; // this doesnt work darn
+
             }
 
 
@@ -38,7 +41,7 @@ public class CountLetters {
 
 
 
-return result;
+return answer;
     }
 
 

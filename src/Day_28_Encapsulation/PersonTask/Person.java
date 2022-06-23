@@ -48,7 +48,7 @@ public class Person {
         this.language = language;
     }
 
-    static{
+    static{ // our static block we made
         planet = "Earth";
         isHuman=true;
         hasNose=true;
@@ -56,8 +56,26 @@ public class Person {
         numberOfHeads=1;
     }
 
+    public static void printPlanetName(){
+        System.out.println("Planet name is: "+planet);
+    }
+
+    public void eat(String food){
+        System.out.println(name +" is eating "+food);
+    }
+
+    public void drink(String drink){
+        System.out.println(name+" is drinking "+drink);
+    }
 
 
-
-
+    public String toString() { // to string only includes the instance variables need to manually add static
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", language='" + language + '\'' +
+                ", planet='" + planet + '\'' + //static added
+                '}';
+    }
 }
