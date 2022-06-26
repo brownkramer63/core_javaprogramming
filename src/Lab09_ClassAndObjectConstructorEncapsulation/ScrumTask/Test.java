@@ -6,5 +6,13 @@ public class Test {
 
 
         System.out.println(tester1);
+
+
+        Developer developer1 = new Developer("Marissa",24,'F',"5thy","Marketing",28,"Python");
+
+        System.out.println(developer1);
+
     }
 }
+
+
