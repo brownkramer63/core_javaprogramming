@@ -54,4 +54,26 @@ public class Phone {
         }
         this.color = color;
     }
+
+    public Phone(String brand, String model, String size, double price, String color) {
+       setBrand(brand);
+     setModel(model);
+    setSize(size);
+    setPrice(price);
+    setColor(color);
+
+
+
+    }
+
+
+    public String toString() {
+        return getClass().getSimpleName()+"{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", size='" + size + '\'' +
+                ", price=" + price +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }
