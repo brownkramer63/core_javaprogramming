@@ -1,4 +1,4 @@
-package Day_31_MethodOverloading;
+package Day_31_MethodOverloading.Vechiles;
 
 public class Vechile {
     private String brand;
