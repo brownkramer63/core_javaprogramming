@@ -1,4 +1,4 @@
-package Day30InheritanceContinued.TypesOfInheritance;
+package Day_30_InheritanceContinued.TypesOfInheritance;
 
 import java.time.LocalDateTime;
 

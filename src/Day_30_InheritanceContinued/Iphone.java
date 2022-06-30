@@ -1,4 +1,4 @@
-package Day30InheritanceContinued;
+package Day_30_InheritanceContinued;
 
 public class Iphone extends Phone {
 
