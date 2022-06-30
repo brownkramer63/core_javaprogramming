@@ -76,4 +76,8 @@ public class Phone {
                 ", color='" + color + '\'' +
                 '}';
     }
+
+    public void text(long phonenumber){
+        System.out.println(model+" is texting "+ phonenumber);
+    }
 }
