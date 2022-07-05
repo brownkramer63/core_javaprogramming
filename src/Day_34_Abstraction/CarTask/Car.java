@@ -64,7 +64,7 @@ public abstract class Car {// abstract classes are meant to be inherited and can
     @Override
     public String toString() {
         return make+" {" +
-                ", model='" + model + '\'' +
+                " model='" + model + '\'' +
                 ", color='" + color + '\'' +
                 ", year=" + year +
                 ", price= $" + price +
