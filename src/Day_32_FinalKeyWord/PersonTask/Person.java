@@ -7,7 +7,7 @@ public class Person {
     private final char gender;
     private final int age;
     private final LocalDate DOB;
-    private final
+
     private static final int numberofHead;
     //methods eat drink sleep
     static{
