@@ -1,0 +1,4 @@
+package lab11.Abstraction;
+
+public class ScrumMaster {
+}
