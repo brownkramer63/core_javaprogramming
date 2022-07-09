@@ -1,4 +1,4 @@
-package lab10;
+package lab11;
 
 public class warmup {
 }
