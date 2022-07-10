@@ -5,9 +5,9 @@ public class Nokia extends Phone{
         super("Nokia", model, size, price, color); //we know brand of objects in nokia class should be nokia
     }
 
-    public void selfdefense(){
-        System.out.println(getBrand()+" "+getModel()+" can be used for self defense");
-    }
+//    public void selfdefense(){
+//        System.out.println(getBrand()+" "+getModel()+" can be used for self defense");
+//    }
 
 
 }

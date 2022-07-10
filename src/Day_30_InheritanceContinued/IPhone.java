@@ -1,6 +1,6 @@
 package Day_30_InheritanceContinued;
 
-public class Iphone extends Phone {
+public class IPhone extends Phone {
 
 //    public Iphone(String brand, String model, String size, double price, String color){
 //       super(brand, model, size, price, color);
@@ -10,9 +10,13 @@ public class Iphone extends Phone {
 
     public static boolean hasApplyPay =true;
 
-    public Iphone(String brand, String model, String size, double price, String color) { //just let intellij do it
+    public IPhone(String brand, String model, String size, double price, String color) { //just let intellij do it
         super("Apple", model, size, price, color);
 
+    }
+
+    public IPhone(String brand, String large, String black, int price) {
+        super();
     }
 
     public void faceTime(long phoneNumber){

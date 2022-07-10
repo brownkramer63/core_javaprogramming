@@ -1,19 +1,16 @@
 package Day_30_InheritanceContinued;
 
 public class Phone {
-    private String brand;
+
     private String model;
     private String size;
     private double price;
     private String color;
 
-    public String getBrand() {
-        return brand;
+    public Phone() {
+
     }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
 
     public String getModel() {
         return model;
@@ -55,8 +52,8 @@ public class Phone {
         this.color = color;
     }
 
-    public Phone(String brand, String model, String size, double price, String color) {
-       setBrand(brand);
+    public Phone(String model, String size, String s, double price, String color) {
+
      setModel(model);
     setSize(size);
     setPrice(price);
@@ -69,7 +66,7 @@ public class Phone {
 
     public String toString() {
         return getClass().getSimpleName()+"{" +
-                "brand='" + brand + '\'' +
+
                 ", model='" + model + '\'' +
                 ", size='" + size + '\'' +
                 ", price=" + price +
