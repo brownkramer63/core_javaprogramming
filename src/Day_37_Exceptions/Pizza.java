@@ -80,7 +80,9 @@ public class Pizza {
             System.exit(1);
 
         }
-        if (size==((Pizza)obj).size){
+
+        Pizza pizza =(Pizza) obj;//this is down casting
+        if (size== pizza.size){ //since we created object we can just call it instead of downcasting
             if (numberOfPepperoniTopping== ((Pizza)obj).numberOfPepperoniTopping){
                 return true;
             }
