@@ -5,7 +5,7 @@ public abstract class Car extends Transportation {
         super(make, model, color, year, price);
     }
 
-    void drive(){
+    public void drive(){
         System.out.println("Driving "+getMake()+" "+getModel());
     }
 
