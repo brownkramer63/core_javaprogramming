@@ -17,6 +17,9 @@ public class Expand {
         ArrayList <Integer> list= new ArrayList<>();
         for (int i = 0; i < nums.length; i++)
             list.add(nums[i]);
+        list.add(0);
+        list.add(0);
+        list.add(0);
         System.out.println(list);
 
     }
