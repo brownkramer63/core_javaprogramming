@@ -6,12 +6,18 @@ import java.util.Scanner;
 
 public class Combineall {
   //  create your method below
-  ArrayList<Integer> list3 = new ArrayList<Integer>();
-    public static ArrayList<Integer> combineAL(ArrayList<Integer> list, ArrayList<Integer> list2){
-        ArrayList<Integer> list3 = new ArrayList<>();
+    public static ArrayList<String> combineRs(String[] r1,String[] r2){
+        ArrayList<String> list3 = new ArrayList<>();
 
-        list3.addAll((list));
-        list3.addAll((list2));
+        for (String each:r1
+             ) {
+            list3.add(each);
+        }
+
+        for (String eachs:r2
+             ) {
+list3.add(eachs);
+        }
 
       return list3;
 
@@ -23,19 +29,16 @@ public class Combineall {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int size = in.nextInt();
-        int size2 = in.nextInt();
-        ArrayList<Integer> list = new ArrayList<>();
-        ArrayList<Integer> list2 = new ArrayList<>();
-
-        for(int i=0; i < size; i++) {
-            list.add(in.nextInt());
+        String [] strs = new String[in.nextInt()];
+        String [] strs2 = new String[in.nextInt()];
+        for(int i=0; i < strs.length; i++) {
+            strs[i] = in.next();
         }
-        for(int i=0; i < size2; i++) {
-            list2.add(in.nextInt());
+        for(int i=0; i < strs2.length; i++) {
+            strs2[i] = in.next();
         }
 
-        System.out.println(combineAL(list, list2));
+        System.out.println(combineRs(strs,strs2));
 
     }
 }
