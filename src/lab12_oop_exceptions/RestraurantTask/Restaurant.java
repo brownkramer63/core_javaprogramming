@@ -77,7 +77,7 @@ public class Restaurant {
         this.servers.addAll(Arrays.asList(servers));
     }
 
-    public void hireChef(Chef chef){
+    public void hireChef(Server chef){
         if (chef==null){
             throw  new NullPointerException("chef name cannot be null");
         }
@@ -113,4 +113,5 @@ public class Restaurant {
                 ", number of chefs=" + chefs.size() +
                 '}';
     }
+
 }

@@ -19,4 +19,8 @@ public class Server extends Employee{
         System.out.println(getName()+" is cleaning table");
     }
 
+    public Chef promoteToChef(){
+        return new Chef(getName(),getAge(),getGender(),getId(),"Chef",getSalary()*1.25);
+    }
+
 }
