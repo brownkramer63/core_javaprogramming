@@ -81,7 +81,7 @@ public class Restaurant {
         if (chef==null){
             throw  new NullPointerException("chef name cannot be null");
         }
-        chefs.add(chef);
+       // chefs.add(chef);
     }
 
     public void hireChef(Chef[] chefs){
