@@ -1,5 +1,7 @@
 package Day_40_CollectionsContinued;
 
+import Utilities.StringUtility;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -28,6 +30,15 @@ public class RemovePalindromes {
 
         System.out.println(namess);
 
+        System.out.println("-----------");
 
+        List<String> names = new ArrayList<>();
+
+        names.addAll(
+                Arrays.asList("Java", "Python", "Cydeo", "Car", "Level", "civic", "radar", "kayak", "reviver", "racecar", "madam"));
+
+        names.removeIf(p -> StringUtility.reverse(p).equalsIgnoreCase(p));
+
+        System.out.println(names);
     }
 }
