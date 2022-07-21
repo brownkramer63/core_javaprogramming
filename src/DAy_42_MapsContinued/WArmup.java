@@ -9,22 +9,21 @@ public class WArmup {
     public static void main(String[] args) {
 
 
-            String str = "aabcccdeeeef";
+       String str = "bbcccaaaaa";
 
-            Map<Character, Integer> map = new LinkedHashMap<>();
+       Map<String, Integer> map = new LinkedHashMap<>();
 
-            for (String each : str.split("")) {
-                int frequency = Collections.frequency( Arrays.asList( str.split(""))  , each );
-                if(frequency == 1)
-                    map. put(each.charAt(0), frequency);
 
-            }
+        for (String each : str.split("")) {
+            int frequency = Collections.frequency(Arrays.asList(str.split("")),each);
 
-            System.out.println(map);
+            map.put(each,frequency);
         }
+        System.out.println(map);
 
 
-    }
+
+    }}
 //1. Write a program that can return the frequency of characters
 //    Not: MUST use map
 //
