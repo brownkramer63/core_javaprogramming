@@ -19,6 +19,10 @@ public class CountTheNumberOfDuplicateLetters {
 
     }
 
+    public static void main(String[] args) {
+        System.out.println(getNumber("aabbsssseee"));
+    }
+
 
 //    Write a function that will return the count of distinct case-insensitive alphabetic
 //    characters and numeric digits that occur more than once in the input string. The
