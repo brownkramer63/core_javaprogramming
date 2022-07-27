@@ -1,6 +1,8 @@
-package InterviewPrepQuestions;
+package InterviewPrepQuestions.realestateQ;
 
-public class RectangleHouse extends RealEstateAbs{
+import InterviewPrepQuestions.realestateQ.RealEstateAbs;
+
+public class RectangleHouse extends RealEstateAbs {
 
     double width;
     double length;

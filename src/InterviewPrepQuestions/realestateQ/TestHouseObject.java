@@ -1,4 +1,9 @@
-package InterviewPrepQuestions;
+package InterviewPrepQuestions.realestateQ;
+
+import InterviewPrepQuestions.realestateQ.CircleHouse;
+import InterviewPrepQuestions.realestateQ.RealEstateAbs;
+import InterviewPrepQuestions.realestateQ.RectangleHouse;
+import InterviewPrepQuestions.realestateQ.SquareHouse;
 
 import java.util.ArrayList;
 import java.util.Arrays;

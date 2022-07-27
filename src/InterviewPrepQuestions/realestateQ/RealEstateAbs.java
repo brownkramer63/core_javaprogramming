@@ -1,4 +1,4 @@
-package InterviewPrepQuestions;
+package InterviewPrepQuestions.realestateQ;
 
 public abstract class RealEstateAbs {
     String name;

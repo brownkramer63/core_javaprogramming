@@ -1,6 +1,8 @@
-package InterviewPrepQuestions;
+package InterviewPrepQuestions.realestateQ;
 
-public class SquareHouse extends RealEstateAbs{
+import InterviewPrepQuestions.realestateQ.RealEstateAbs;
+
+public class SquareHouse extends RealEstateAbs {
     double side;
 
     public SquareHouse(String name, double side) {

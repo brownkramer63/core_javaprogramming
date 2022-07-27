@@ -1,6 +1,6 @@
-package InterviewPrepQuestions;
+package InterviewPrepQuestions.realestateQ;
 
-public class CircleHouse extends RealEstateAbs{
+public class CircleHouse extends RealEstateAbs {
 
     double radius;
 
