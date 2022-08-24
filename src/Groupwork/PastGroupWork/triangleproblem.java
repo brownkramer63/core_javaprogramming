@@ -1,4 +1,4 @@
-package Groupwork;
+package Groupwork.PastGroupWork;
 
 public class triangleproblem {
     public static void main(String[] args) {

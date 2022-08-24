@@ -1,4 +1,4 @@
-package Groupwork;
+package Groupwork.PastGroupWork;
 
 public class DirtyCodeCleaned {
     public static void main(String[] args) {

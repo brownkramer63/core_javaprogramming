@@ -1,4 +1,4 @@
-package Groupwork;
+package Groupwork.PastGroupWork;
 
 import java.util.Locale;
 import java.util.Scanner;
