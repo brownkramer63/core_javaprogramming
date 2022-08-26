@@ -7,7 +7,7 @@ public class ClassA {
 }
 //---------------------------------------
 class B extends ClassA {
-    @Override
+
     public void show() {
         System.out.println("this is how we typcially override a method");
     }
